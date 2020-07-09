@@ -151,7 +151,7 @@ function multiplyArray(multArr) {
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-testMultiplyArray(testArray);
+// testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -172,10 +172,25 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+var testDynamicArray = [1,2,3,4,5]; 
 
-function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+function multiplyAnyArray(dynamicArray) { 
+    var product = 1;
+    for (var i=0; i < dynamicArray.length ; i++ ){
+        product = multiply( product, dynamicArray[i])[0];
+    }
+    
+    var multString="";
+    for (var c=0; c < dynamicArray.length ; c++ ){
+        multString = multString + dynamicArray[c];
 
+        if(c !== dynamicArray.length-1){
+            multString+=",";
+        }
+
+    }
+    var returnArray = [product , "The numbers "+multString+" have a product of "+product+"."];
+    return returnArray;
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
