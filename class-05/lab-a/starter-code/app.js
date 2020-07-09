@@ -14,7 +14,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { 
 
     var sum1= a+b;
-    var returnArray=[sum1, "The sum of "+a+" and "+b+" is 11."];
+    var returnArray=[sum1, "The sum of "+a+" and "+b+" is "+sum1+"."];
     return returnArray;
 
 }
@@ -26,7 +26,10 @@ function sum(a, b) {
 
 /////////////////////////////////////
 /* Problem 2
-Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiply() that takes in two numbers
+ as arguments and returns an array where the first element is 
+ the product of those numbers, and the second element is a string that 
+ EXACTLY follows this example and uses the values that were input into the function:
 
 "The product of 5 and 9 is 45."
 
@@ -34,6 +37,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+ 
 
 }
 
