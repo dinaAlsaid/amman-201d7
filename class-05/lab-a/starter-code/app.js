@@ -14,7 +14,7 @@ Test this function by hand in the console to get it working, and when you think 
 function sum(a, b) { 
 
     var sum1= a+b;
-    var returnArray=[sum1, "The sum of "+a+" and "+b+" is 11."];
+    var returnArray=[sum1, "The sum of "+a+" and "+b+" is "+sum1+"."];
     return returnArray;
 
 }
