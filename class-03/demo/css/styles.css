@@ -1,0 +1,32 @@
+.margin {
+    /* margin-top: 30px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    margin-left: 35px; */
+
+    /* margin: 10px 15px 20px 30px; */
+    margin: inherit;
+
+}
+.margin-50px{
+    margin: 50px;
+}
+.padding {
+    /* padding-top: 50px;
+    padding-right: 55px;
+    padding-bottom: 50px;
+    padding-left: 55px; */
+
+    /* padding: 10px 15px 20px 30px; */
+
+    padding: 30px 35px;
+
+    padding: 10px;
+}
+
+.border {
+    border-style: dashed;
+    /* border-width: 10px 15px 20px 30px; */
+    /* border-width: 10px 20px; */
+    border-width: 30px;
+}

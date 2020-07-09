@@ -1,0 +1,23 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    font-family: monospace;
+}
+
+p {
+    color: darkblue;
+}
+
+.European {
+    color: darkred;
+}
+
+.American {
+    color: darkslateblue;
+}
+
+.Japanese {
+    color: firebrick;
+}
