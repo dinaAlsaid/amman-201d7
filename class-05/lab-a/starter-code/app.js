@@ -75,7 +75,10 @@ function sumAndMultiply(a, b, c) {
 
 /////////////////////////////////////
 /* Problem 4
-Write a function called sumArray() that takes in an array of numbers as its single argument and then returns an array where the first element is the sum of the numbers in the array, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called sumArray() that takes in an array of numbers as its single argument and then
+ returns an array where the first element is the sum of the numbers in the array,
+  and the second element is a string that EXACTLY follows this example and uses the values that were input into 
+  the function:
 
 "2,3,4 was passed in as an array of numbers, and 9 is their sum."
 
@@ -84,10 +87,27 @@ IMPORTANT DETAIL: You may not use the arithmetic operator + in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
 // Write your code here
-var testArray = [2, 3, 4]; //eslint-disable-line
+var testArray = [2, 3, 4]; 
 
-function sumArray(sumArr) { //eslint-disable-line
+function sumArray(sumArr) { 
+    var sum1 = 0;
+    for (var i=0; i < sumArr.length ; i++ ){
+        sum1 = sum( sum1, sumArr[i])[0];
+    }
 
+    var sumString="";
+    for (var c=0; c < sumArr.length ; c++ ){
+        sumString = sumString + sumArr[c];
+
+        if(c !== sumArr.length-1){
+            sumString+=",";
+        }
+
+
+    }
+
+    var returnArray = [sum1 , sumString+' was passed in as an array of numbers, and '+sum1+' is their sum.'];
+    return returnArray;
 }
 
 // Here is the test for sumArray(); uncomment it to run it
