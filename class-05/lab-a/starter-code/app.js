@@ -31,9 +31,11 @@ function multiply(a, b) { //eslint-disable-line
 // Problem 3
 // Write your code here
 function sumAndMultiply(a, b, c) { 
-    var sum1 = a+b+c;
-    var product = a*b*c;
-    var returnArray =[sum1,product,a+" and "+b+" and "+c+" sum to "+sum1+"." , "The product of "+a+" and "+b+" and "+c+" is "+product+"."]
+    var sum1 = sum(a,b)[0];
+    var sum2 = sum(sum1,c)[0];
+    var product1 = multiply(a,b)[0];
+    var product = multiply(product1,c)[0];
+    var returnArray =[sum2,product,a+" and "+b+" and "+c+" sum to "+sum2+"." , "The product of "+a+" and "+b+" and "+c+" is "+product+"."]
     return returnArray;
 }
 
